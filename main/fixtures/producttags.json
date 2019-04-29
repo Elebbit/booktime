@@ -1,0 +1,20 @@
+[
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Story",
+    "slug": "story",
+    "description": "",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Adventure",
+    "slug": "adventure",
+    "description": "",
+    "active": true
+  }
+}
+]
