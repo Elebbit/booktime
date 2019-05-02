@@ -33,7 +33,7 @@ class Command(BaseCommand):
                 product.tags.add(tag)
                 c["tags"] += 1
                 if tag_created:
-                    c["tag_created"] += 1
+                    c["tags_created"] += 1
             with open(
                 os.path.join(
                     options["image_basedir"],

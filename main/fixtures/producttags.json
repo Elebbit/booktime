@@ -2,8 +2,44 @@
 {
   "model": "main.producttag",
   "fields": {
-    "name": "Story",
-    "slug": "story",
+    "name": "Finance",
+    "slug": "finance",
+    "description": "Finance related books",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Teamwork",
+    "slug": "teamwork",
+    "description": "Advice about teamwork and team building",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Opensource",
+    "slug": "opensource",
+    "description": "Collections of book dedicated to opensource",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Science Fiction",
+    "slug": "science-fiction",
+    "description": "All the best science fiction books",
+    "active": true
+  }
+},
+{
+  "model": "main.producttag",
+  "fields": {
+    "name": "Drama",
+    "slug": "drama",
     "description": "",
     "active": true
   }
@@ -11,8 +47,8 @@
 {
   "model": "main.producttag",
   "fields": {
-    "name": "Adventure",
-    "slug": "adventure",
+    "name": "Romance",
+    "slug": "romance",
     "description": "",
     "active": true
   }
