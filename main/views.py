@@ -3,6 +3,8 @@ from django.views.generic.list import ListView
 from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 from main import forms
 from main import models
 import logging
@@ -119,3 +121,4 @@ class AddressDeleteView(LoginRequiredMixin, DeleteView):
 
     def get_queryset(self):
         return self.model.objects.filter(user=self.request.user)
+

@@ -28,6 +28,12 @@
         </div>
     </nav>
     <div class="container">
+    {% if request.basket %}
+        <div>
+            {{ request.basket.count }}
+            items in basket
+        </div>
+    {% endif %}
     {% block content %}
     {% endblock content %}
     </div>
