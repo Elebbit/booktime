@@ -6,10 +6,12 @@ from main import views, forms
 from main import models
 
 urlpatterns = [
+    path('basket/', views.manage_basket, name='basket'),
     path('adress/', views.AddressListView.as_view(), name='address_list'),
     path('adress/create/', views.AddressCreateView.as_view(), name='address_create'),
     path('adress/<int:pk>/', views.AddressUpdateView.as_view(), name='address_update'),
     path('adress/<int:pk>/delete/', views.AddressDeleteView.as_view(), name='address_delete'),
+    path('add_to_basket', views.add_to_basket, name='add_to_basket'),
     path('login/',
          auth_views.LoginView.as_view(template_name='login.html', form_class=forms.AuthenticationForm,),
          name='login',
